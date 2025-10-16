@@ -1,3 +1,8 @@
+/*************************
+ * Name:    Katkov Stepan*
+ * Project: Lab04        *
+ * Var 8                 *
+ *************************/
 #include <iostream>
 #include <iomanip>
 
@@ -79,4 +84,5 @@ int main() {
     delete[] arrayC;
     
     return startIndex;
+
 }
