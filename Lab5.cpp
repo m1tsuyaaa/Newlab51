@@ -98,17 +98,11 @@ int calculateSum(const int* array, int size) {
 // Функция вывода массивов в табличном формате
 void printArrays(const int* arrayA, const int* arrayB, const int* arrayC, int size) {
     cout << "\nРезультирующие массивы:" << endl;
-    cout << setw(columnWidth) << "Индекс" 
-         << setw(columnWidth) << "A[i]" 
-         << setw(columnWidth) << "B[i]" 
-         << setw(columnWidth) << "C[i]" << endl;
+    cout << setw(columnWidth) << "Индекс" << setw(columnWidth) << "A[i]" << setw(columnWidth) << "B[i]" << setw(columnWidth) << "C[i]" << endl;
     cout << string(columnWidth * numberOfArrays, '-') << endl;
     
     for (int index = startIndex; index < size; ++index) {
-        cout << setw(columnWidth) << index 
-             << setw(columnWidth) << arrayA[index] 
-             << setw(columnWidth) << arrayB[index] 
-             << setw(columnWidth) << arrayC[index] << endl;
+        cout << setw(columnWidth) << index << setw(columnWidth) << arrayA[index] << setw(columnWidth) << arrayB[index] << setw(columnWidth) << arrayC[index] << endl;
     }
 }
 
@@ -118,4 +112,5 @@ void printResults(int sumA, int sumB, int sumC) {
     cout << "Сумма элементов массива A: " << sumA << endl;
     cout << "Сумма элементов массива B: " << sumB << endl;
     cout << "Сумма элементов массива C: " << sumC << endl;
+
 }
